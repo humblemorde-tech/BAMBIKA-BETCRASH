@@ -1,0 +1,70 @@
+/* ==========================================================================
+   BAMBIKA INSTANT ARENA RESPONSIVE OVERRIDES (responsive.css)
+   ========================================================================== */
+
+/* Universal Layout Container Parameters */
+.mobile-viewport-container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    width: 100%;
+}
+
+/* Scrollbar elimination handling for category tabs */
+.category-scroller {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Card Visual Improvements matching premium layout */
+.game-card {
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.game-card:active {
+    transform: scale(0.96);
+}
+
+.game-thumb {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Media Query breakpoints targeting standard mobile dimensions */
+@media screen and (max-width: 360px) {
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr); /* Drop to 2 columns on very narrow panels */
+        gap: 8px;
+    }
+    
+    .promo-banner h2 {
+        font-size: 18px;
+    }
+    
+    .brand-logo-fallback {
+        font-size: 18px;
+    }
+}
+
+/* Desktop Viewport Balancing Rules */
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: #e2e8f0;
+    }
+    
+    .app-header, .category-scroller, .games-grid, .bottom-nav, .promo-banner, .section-header {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .app-header, .bottom-nav {
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+}
