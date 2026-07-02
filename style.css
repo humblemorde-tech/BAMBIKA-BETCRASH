@@ -549,3 +549,702 @@ section{
     text-decoration:none;
     font-weight:600;
 }
+/* ==========================================
+   LOGIN PAGE
+========================================== */
+
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#071324;
+    overflow:hidden;
+    position:relative;
+    padding:20px;
+}
+
+.background-glow{
+    position:absolute;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:.35;
+    z-index:0;
+}
+
+.glow1{
+    background:#00bfff;
+    top:-100px;
+    left:-120px;
+}
+
+.glow2{
+    background:#ff2d55;
+    bottom:-100px;
+    right:-120px;
+}
+
+.login-container{
+    width:100%;
+    max-width:430px;
+    position:relative;
+    z-index:2;
+}
+
+.login-logo{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.login-logo h1{
+    color:#00bfff;
+    font-size:36px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.login-logo p{
+    color:#fff;
+    font-size:16px;
+    letter-spacing:4px;
+    font-weight:600;
+}
+
+.login-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    padding:35px 25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+}
+
+.login-card h2{
+    color:#fff;
+    text-align:center;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    color:#c7d2e5;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.input-group{
+    display:flex;
+    align-items:center;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:14px;
+    padding:0 15px;
+    margin-bottom:18px;
+}
+
+.input-group i{
+    color:#00bfff;
+    font-size:18px;
+    margin-right:10px;
+}
+
+.input-group input{
+    flex:1;
+    background:none;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:15px;
+    padding:16px 0;
+}
+
+.input-group input::placeholder{
+    color:#9db3d8;
+}
+
+.toggle-password{
+    cursor:pointer;
+    color:#fff;
+}
+
+.remember-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:22px;
+    font-size:14px;
+}
+
+.remember-row label{
+    color:#fff;
+}
+
+.remember-row a{
+    color:#00bfff;
+    text-decoration:none;
+}
+
+.login-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#00bfff,#008cff);
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(0,191,255,.4);
+}
+
+.divider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:25px 0;
+    color:#bbb;
+}
+
+.register-btn{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    padding:14px;
+    border-radius:14px;
+    background:#ff2d55;
+    color:#fff;
+    font-weight:700;
+    transition:.3s;
+}
+
+.register-btn:hover{
+    background:#ff4569;
+}
+
+.login-footer{
+    margin-top:25px;
+    text-align:center;
+}
+
+.login-footer a{
+    color:#00bfff;
+    text-decoration:none;
+    font-weight:600;
+       }/* ==========================================
+   GLOBAL HEADER
+========================================== */
+
+.header{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(8,17,31,.88);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.navbar{
+    max-width:1400px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo h2{
+    color:var(--primary);
+    font-size:28px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#fff;
+    font-size:13px;
+    letter-spacing:3px;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:var(--text-light);
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--primary);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:14px 28px;
+    border-radius:14px;
+    font-size:15px;
+    font-weight:700;
+    transition:.35s;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#2bb8ff,#008cff);
+    color:#fff;
+    box-shadow:0 12px 30px rgba(43,184,255,.30);
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-danger{
+    background:linear-gradient(135deg,#ff3131,#d91e1e);
+    color:#fff;
+}
+
+.btn-danger:hover{
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+    background:transparent;
+}
+
+.btn-outline:hover/* ==========================================
+   PREMIUM TABLES
+========================================== */
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:700px;
+}
+
+.table thead{
+    background:rgba(43,184,255,.12);
+}
+
+.table th{
+    padding:18px;
+    text-align:left;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+}
+
+.table td{
+    padding:16px 18px;
+    color:var(--text-light);
+    border-top:1px solid rgba(255,255,255,.06);
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:rgba(255,255,255,.04);
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:20px;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-content{
+    width:100%;
+    max-width:520px;
+    background:var(--card);
+    border-radius:22px;
+    border:1px solid rgba(255,255,255,.08);
+    padding:30px;
+    animation:modalPop .35s ease;
+}
+
+@keyframes modalPop{
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.modal-close{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:110%;
+    right:0;
+    min-width:220px;
+    background:var(--card);
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+    overflow:hidden;
+    display:none;
+    z-index:500;
+}
+
+.dropdown.active .dropdown-menu{
+    display:block;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:14px 18px;
+    color:var(--text-light);
+    transition:.3s;
+}
+
+.dropdown-menu a:hover{
+    background:rgba(43,184,255,.12/* ==========================================
+   PREMIUM TABLES
+========================================== */
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:700px;
+}
+
+.table thead{
+    background:rgba(43,184,255,.12);
+}
+
+.table th{
+    padding:18px;
+    text-align:left;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+}
+
+.table td{
+    padding:16px 18px;
+    color:var(--text-light);
+    border-top:1px solid rgba(255,255,255,.06);
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:rgba(255,255,255,.04);
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:20px;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-content{
+    width:100%;
+    max-width:520px;
+    background:var(--card);
+    border-radius:22px;
+    border:1px solid rgba(255,255,255,.08);
+    padding:30px;
+    animation:modalPop .35s ease;
+}
+
+@keyframes modalPop{
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.modal-close{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:110%;
+    right:0;
+    min-width:220px;
+    background:var(--card);
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+    overflow:hidden;
+    display:none;
+    z-index:500;
+}
+
+.dropdown.active .dropdown-menu{
+    display:block;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:14px 18px;
+    color:var(--text-light);
+    transition:.3s;
+}
+
+.dropdown-menu a:hover{
+    background:rgba(43,184,255,.12/* ==========================================
+   PREMIUM TABLES
+========================================== */
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:700px;
+}
+
+.table thead{
+    background:rgba(43,184,255,.12);
+}
+
+.table th{
+    padding:18px;
+    text-align:left;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+}
+
+.table td{
+    padding:16px 18px;
+    color:var(--text-light);
+    border-top:1px solid rgba(255,255,255,.06);
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:rgba(255,255,255,.04);
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:20px;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-content{
+    width:100%;
+    max-width:520px;
+    background:var(--card);
+    border-radius:22px;
+    border:1px solid rgba(255,255,255,.08);
+    padding:30px;
+    animation:modalPop .35s ease;
+}
+
+@keyframes modalPop{
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.modal-close{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:110%;
+    right:0;
+    min-width:220px;
+    background:var(--card);
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+    overflow:hidden;
+    display:none;
+    z-index:500;
+}
+
+.dropdown.active .dropdown-menu{
+    display:block;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:14px 18px;
+    color:var(--text-light);
+    transition:.3s;
+}
+
+.dropdown-menu a:hover{
+    background:rgba(43,184,255,.12
+                    
+                    
