@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAMBIKA-BETCRASH | Register</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+    <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Background -->
+    <div class="auth-bg"></div>
+
+    <!-- Register Container -->
+    <div class="auth-container">
+
+        <!-- Logo -->
+        <div class="auth-logo">
+            <img src="assets/logo.png" alt="BAMBIKA Logo">
+            <h1>BAMBIKA-BETCRASH</h1>
+            <p>Create Your Account</p>
+        </div>
+
+        <!-- Register Form -->
+        <form id="registerForm" class="auth-form">
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="07XXXXXXXX"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create a password"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm password"
+                    required>
+            </div>
+
+            <div class="remember-row">
+                <label>
+                    <input type="checkbox" required>
+                    I agree to the Terms & Conditions
+                </label>
+            </div>
+
+            <button class="btn-primary" type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+        <!-- Divider -->
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <!-- Login -->
+        <p class="auth-footer">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+        <!-- Back -->
+        <a href="index.html" class="back-home">
+            ← Back Home
+        </a>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
