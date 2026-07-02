@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promotions | BAMBIKA-BETCRASH</title>
+
+  <!-- GLOBAL THEME -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- PAGE SPECIFIC -->
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+  <!-- TOP NAV -->
+  <header class="topbar">
+    <div class="logo">BAMBIKA-BETCRASH</div>
+
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="games.html">Games</a>
+      <a href="wallet.html">Wallet</a>
+      <a href="promotions.html" class="active">Promotions</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- PAGE WRAPPER -->
+  <main class="container">
+
+    <!-- HEADER -->
+    <section class="page-header">
+      <h1>🔥 Promotions & Bonuses</h1>
+      <p>Claim rewards, boost your balance, and play smarter.</p>
+    </section>
+
+    <!-- PROMO CARDS -->
+    <section class="grid-3">
+
+      <!-- BONUS 1 -->
+      <div class="card promo-card">
+        <h3>🎁 Welcome Bonus</h3>
+        <p>Get 100% bonus on your first deposit up to KES 5,000.</p>
+        <button class="btn-primary">Claim Now</button>
+      </div>
+
+      <!-- BONUS 2 -->
+      <div class="card promo-card">
+        <h3>💰 Daily Reward</h3>
+        <p>Log in daily and earn free spins or cashback rewards.</p>
+        <button class="btn-primary">Activate</button>
+      </div>
+
+      <!-- BONUS 3 -->
+      <div class="card promo-card">
+        <h3>🔥 Loss Cashback</h3>
+        <p>Get 10% cashback on weekly losses automatically.</p>
+        <button class="btn-primary">Enable</button>
+      </div>
+
+    </section>
+
+    <!-- REFERRAL SECTION -->
+    <section class="card referral-box">
+
+      <h2>👥 Referral Program</h2>
+      <p>Invite friends and earn commission for every deposit they make.</p>
+
+      <div class="referral-link">
+        <input type="text" value="https://bambika-betcrash.com/ref?code=USER123" readonly>
+        <button class="btn-secondary" onclick="copyLink()">Copy</button>
+      </div>
+
+    </section>
+
+    <!-- PROMO RULES -->
+    <section class="card rules-box">
+
+      <h2>📜 Terms & Conditions</h2>
+      <ul>
+        <li>Bonuses apply only to verified accounts.</li>
+        <li>Wagering requirements may apply.</li>
+        <li>Abuse of promotions leads to account suspension.</li>
+        <li>Promotions can change without prior notice.</li>
+      </ul>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 BAMBIKA-BETCRASH. All rights reserved.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function copyLink()
