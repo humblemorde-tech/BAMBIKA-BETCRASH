@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAMBIKA-BETCRASH | Dashboard</title>
+
+    <link rel="icon" href="assets/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="topbar">
+
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+        <h2>BAMBIKA-BETCRASH</h2>
+    </div>
+
+    <div class="top-actions">
+
+        <button class="icon-btn">
+            <i class="fas fa-bell"></i>
+        </button>
+
+        <button class="icon-btn">
+            <i class="fas fa-wallet"></i>
+        </button>
+
+        <div class="profile-mini">
+            <img src="assets/images/user.png" alt="">
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+<a href="dashboard.html" class="active">
+<i class="fas fa-home"></i>
+<span>Dashboard</span>
+</a>
+
+<a href="games.html">
+<i class="fas fa-dice"></i>
+<span>Games</span>
+</a>
+
+<a href="wallet.html">
+<i class="fas fa-wallet"></i>
+<span>Wallet</span>
+</a>
+
+<a href="history.html">
+<i class="fas fa-clock"></i>
+<span>History</span>
+</a>
+
+<a href="promotions.html">
+<i class="fas fa-gift"></i>
+<span>Promotions</span>
+</a>
+
+<a href="leaderboard.html">
+<i class="fas fa-trophy"></i>
+<span>Leaderboard</span>
+</a>
+
+<a href="profile.html">
+<i class="fas fa-user"></i>
+<span>Profile</span>
+</a>
+
+<a href="settings.html">
+<i class="fas fa-cog"></i>
+<span>Settings</span>
+</a>
+
+<a href="help.html">
+<i class="fas fa-headset"></i>
+<span>Help</span>
+</a>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<main class="dashboard">
+
+<!-- Welcome -->
+
+<section class="welcome-card">
+
+<h1>Welcome Back 👋</h1>
+
+<p>Good luck and enjoy your games.</p>
+
+</section>
+
+<!-- Balance -->
+
+<section class="balance-card">
+
+<h2>Available Balance</h2>
+
+<h1>KSh 0.00</h1>
+
+<div class="balance-buttons">
+
+<a href="wallet.html" class="btn deposit">
+Deposit
+</a>
+
+<a href="wallet.html" class="btn withdraw">
+Withdraw
+</a>
+
+</div>
+
+</section>
+
+<!-- Quick Stats -->
+
+<section class="stats-grid">
+
+<div class="stat-card">
+<i class="fas fa-wallet"></i>
+<h3>Deposits</h3>
+<p>KSh 0.00</p>
+</div>
+
+<div class="stat-card">
+<i class="fas fa-arrow-up"></i>
+<h3>Withdrawals</h3>
+<p>KSh 0.00</p>
+</div>
+
+<div class="stat-card">
+<i class="fas fa-chart-line"></i>
+<h3>Total Bets</h3>
+<p>0</p>
+</div>
+
+<div class="stat-card">
+<i class="fas fa-coins"></i>
+<h3>Total Wins</h3>
+<p>KSh 0.00</p>
+</div>
+
+</section>
+
+<!-- Popular Games -->
+
+<section class="games-section">
+
+<h2>Popular Games</h2>
+
+<div class="games-grid">
+
+<a href="#" class="game-card">
+<img src="assets/images/crash.png">
+<h3>Crash</h3>
+</a>
+
+<a href="#" class="game-card">
+<img src="assets/images/aviator.png">
+<h3>Aviator</h3>
+</a>
+
+<a href="#" class="game-card">
+<img src="assets/images/chicken-road.png">
+<h3>Chicken Road</h3>
+</a>
+
+<a href="#" class="game-card">
+<img src="assets/images/mines.png">
+<h3>Mines</h3>
+</a>
+
+<a href="#" class="game-card">
+<img src="assets/images/plinko.png">
+<h3>Plinko</h3>
+</a>
+
+<a href="#" class="game-card">
+<img src="assets/images/roulette.png">
+<h3>Roulette</h3>
+</a>
+
+</div>
+
+</section>
+
+<!-- Recent Bets -->
+
+<section class="recent-bets">
+
+<h2>Recent Bets</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Game</th>
+
+<th>Stake</th>
+
+<th>Multiplier</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Crash</td>
+
+<td>KSh 100</td>
+
+<td>2.35x</td>
+
+<td class="win">Won</td>
+
+</tr>
+
+<tr>
+
+<td>Aviator</td>
+
+<td>KSh 50</td>
+
+<td>1.80x</td>
+
+<td class="loss">Lost</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html" class="active">
+<i class="fas fa-home"></i>
+</a>
+
+<a href="games.html">
+<i class="fas fa-dice"></i>
+</a>
+
+<a href="wallet.html">
+<i class="fas fa-wallet"></i>
+</a>
+
+<a href="history.html">
+<i class="fas fa-clock"></i>
+</a>
+
+<a href="profile.html">
+<i class="fas fa-user"></i>
+</a>
+
+</nav>
+
+<!-- JavaScript -->
+
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/notifications.js"></script>
+
+</body>
+  </html>
