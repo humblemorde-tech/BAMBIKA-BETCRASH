@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet History | BAMBIKA-BETCRASH</title>
+
+    <!-- CORE THEME (must load first) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- PAGE SPECIFIC -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- =========================
+     TOP NAVBAR
+========================= -->
+<header class="navbar">
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+        <span>BAMBIKA-CRASH</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="games.html">Games</a>
+        <a href="wallet.html">Wallet</a>
+        <a class="active" href="history.html">History</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+    <div class="user-box">
+        <span id="username">Player</span>
+    </div>
+</header>
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+<main class="container">
+
+    <section class="page-header">
+        <h1>Betting History</h1>
+        <p>Track all your wins, losses, and game activity</p>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="filters-card">
+
+        <select id="filterGame">
+            <option value="all">All Games</option>
+            <option value="crash">Crash</option>
+            <option value="casino">Casino</option>
+        </select>
+
+        <select id="filterResult">
+            <option value="all">All Results</option>
+            <option value="win">Wins</option>
+            <option value="loss">Losses</option>
+        </select>
+
+        <input type="date" id="filterDate">
+
+        <button onclick="filterHistory()">Filter</button>
+    </section>
+
+    <!-- HISTORY TABLE -->
+    <section class="table-container">
+
+        <table class="table" id="historyTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Game</th>
+                    <th>Bet Amount</th>
+                    <th>Multiplier</th>
+                    <th>Payout</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>2026-07-01</td>
+                    <td>Crash</td>
+                    <td>KES 500</td>
+                    <td>2.1x</td>
+                    <td>KES 1050</td>
+                    <td class="win">Win</td>
+                </tr>
+
+                <tr>
+                    <td>2026-06-30</td>
+                    <td>Casino</td>
+                    <td>KES 300</td>
+                    <td>-</td>
+                    <td>KES 0</td>
+                    <td class="loss">Loss</td>
+                </tr>
+
+                <tr>
+                    <td>2026-06-29</td>
+                    <td>Crash</td>
+                    <td>KES 1000</td>
+                    <td>1.4x</td>
+                    <td>KES 1400</td>
+                    <td class="win">Win</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="footer">
+    <p>© 2026 BAMBIKA-BETCRASH. All rights reserved.</p>
+</footer>
+
+<!-- =========================
+     JS
+========================= -->
+<script src="js/storage.js"></script>
+<script src="js/history.js"></script>
+
+<script>
+function filterHistory() {
+    const game = document.getElementById("filterGame").value;
+    const result = document.getElementById("filterResult").value;
+    const date = document.getElementById("filterDate").value;
+
+    const rows = document.querySelectorAll("#historyTable tbody tr");
+
+    rows.forEach(row => {
+        const rowGame = row.cells[1].innerText.toLowerCase();
+        const rowResult = row.cells[5].innerText.toLowerCase();
+        const rowDate = row.cells[0].innerText;
+
+        let show = true;
+
+        if (game !== "all" && rowGame !== game) show = false;
+        if (result !== "all" && rowResult !== result) show = false;
+        if (date && rowDate !== date) show = false;
+
+        row.style.display = show ? "" : "none";
+    });
+}
+</script>
+
+</body>
+  </html>
