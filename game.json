@@ -1,0 +1,45 @@
+{
+  "crash_games": [
+    { "id": "crash-01", "name": "Bambika Aviator", "category": "Classic", "rtp": 99.0, "max_multiplier": 100000.0, "volatility": "High", "speed": "Medium", "icon": "assets/icons/aviator.svg", "animation_style": "plane-vector" },
+    { "id": "crash-02", "name": "SpaceX Rocket Rush", "category": "Sci-Fi", "rtp": 98.5, "max_multiplier": 50000.0, "volatility": "Extreme", "speed": "Fast", "icon": "assets/icons/rocket.svg", "animation_style": "3d-rocket" },
+    { "id": "crash-03", "name": "Crypto Moon Shot", "category": "Crypto", "rtp": 99.2, "max_multiplier": 25000.0, "volatility": "Medium", "speed": "Fast", "icon": "assets/icons/bitcoin.svg", "animation_style": "chart-ticker" },
+    { "id": "crash-04", "name": "Zeus Lightning Strike", "category": "Mythology", "rtp": 98.0, "max_multiplier": 75000.0, "volatility": "High", "speed": "Slow", "icon": "assets/icons/thunder.svg", "animation_style": "lightning-bolt" },
+    { "id": "crash-05", "name": "Neon Nitro Rider", "category": "Cyberpunk", "rtp": 98.7, "max_multiplier": 15000.0, "volatility": "Low", "speed": "Very Fast", "icon": "assets/icons/bike.svg", "animation_style": "neon-trail" },
+    { "id": "crash-06", "name": "Volcano Eruption", "category": "Nature", "rtp": 97.8, "max_multiplier": 120000.0, "volatility": "Extreme", "speed": "Slow", "icon": "assets/icons/volcano.svg", "animation_style": "lava-flow" },
+    { "id": "crash-07", "name": "Submarine Depth Charge", "category": "Oceanic", "rtp": 99.0, "max_multiplier": 30000.0, "volatility": "Medium", "speed": "Medium", "icon": "assets/icons/sub.svg", "animation_style": "sonar-ping" },
+    { "id": "crash-08", "name": "Hyperdrive Hyperloop", "category": "Sci-Fi", "rtp": 98.9, "max_multiplier": 40000.0, "volatility": "High", "speed": "Fast", "icon": "assets/icons/tunnel.svg", "animation_style": "warp-speed" },
+    { "id": "crash-09", "name": "Ninja Grapple Run", "category": "Anime", "rtp": 98.4, "max_multiplier": 20000.0, "volatility": "Low", "speed": "Fast", "icon": "assets/icons/ninja.svg", "animation_style": "shadow-dash" },
+    { "id": "crash-10", "name": "Solar Flare", "category": "Space", "rtp": 97.5, "max_multiplier": 200000.0, "volatility": "Extreme", "speed": "Medium", "icon": "assets/icons/sun.svg", "animation_style": "plasma-burst" },
+    { "id": "crash-11", "name": "Steampunk Balloonist", "category": "Retro", "rtp": 98.8, "max_multiplier": 35000.0, "volatility": "Medium", "speed": "Slow", "icon": "assets/icons/balloon.svg", "animation_style": "propeller-spin" },
+    { "id": "crash-12", "name": "Laser Drone Escape", "category": "Cyberpunk", "rtp": 99.1, "max_multiplier": 18000.0, "volatility": "Low", "speed": "Very Fast", "icon": "assets/icons/drone.svg", "animation_style": "matrix-grid" },
+    { "id": "crash-13", "name": "Anubis Underworld Ascent", "category": "Egyptian", "rtp": 98.2, "max_multiplier": 88000.0, "volatility": "High", "speed": "Medium", "icon": "assets/icons/anubis.svg", "animation_style": "sand-storm" },
+    { "id": "crash-14", "name": "Wall Street Bull Run", "category": "Finance", "rtp": 99.3, "max_multiplier": 10000.0, "volatility": "Low", "speed": "Fast", "icon": "assets/icons/bull.svg", "animation_style": "candlestick" },
+    { "id": "crash-15", "name": "Comet Tail Racer", "category": "Space", "rtp": 98.6, "max_multiplier": 60000.0, "volatility": "High", "speed": "Fast", "icon": "assets/icons/comet.svg", "animation_style": "particle-streak" },
+    { "id": "crash-16", "name": "Dragon Fireball", "category": "Fantasy", "rtp": 97.9, "max_multiplier": 150000.0, "volatility": "Extreme", "speed": "Medium", "icon": "assets/icons/dragon.svg", "animation_style": "flame-breath" },
+    { "id": "crash-17", "name": "Meteor Shower Burst", "category": "Space", "rtp": 98.7, "max_multiplier": 45000.0, "volatility": "High", "speed": "Fast", "icon": "assets/icons/meteor.svg", "animation_style": "shatter-impact" },
+    { "id": "crash-18", "name": "Sonic Boom Sonic Blast", "category": "Sci-Fi", "rtp": 99.0, "max_multiplier": 22000.0, "volatility": "Medium", "speed": "Very Fast", "icon": "assets/icons/sonic.svg", "animation_style": "shockwave" },
+    { "id": "crash-19", "name": "Cyber Heist Hack", "category": "Cyberpunk", "rtp": 98.5, "max_multiplier": 33000.0, "volatility": "Medium", "speed": "Medium", "icon": "assets/icons/terminal.svg", "animation_style": "binary-cascade" },
+    { "id": "crash-20", "name": "Aladdin's Magic Carpet", "category": "Mythology", "rtp": 98.8, "max_multiplier": 55000.0, "volatility": "High", "speed": "Slow", "icon": "assets/icons/carpet.svg", "animation_style": "smoke-genie" },
+    { "id": "crash-21", "name": "Phoenix Reborn Lift", "category": "Fantasy", "rtp": 98.1, "max_multiplier": 95000.0, "volatility": "Extreme", "speed": "Medium", "icon": "assets/icons/phoenix.svg", "animation_style": "ash-glow" },
+    { "id": "crash-22", "name": "Quantum Particle Leap", "category": "Sci-Fi", "rtp": 99.4, "max_multiplier": 12000.0, "volatility": "Low", "speed": "Very Fast", "icon": "assets/icons/atom.svg", "animation_style": "orbital-spin" },
+    { "id": "crash-23", "name": "Bambika Infinite Horizon", "category": "VIP Custom", "rtp": 99.5, "max_multiplier": 500000.0, "volatility": "Extreme", "speed": "Variable", "icon": "assets/icons/infinity.svg", "animation_style": "hyperspace-loop" }
+  ],
+  "casino_games": [
+    { "id": "cas-01", "name": "Neon Blackjack Pro", "type": "Table Game", "rtp": 99.6, "min_bet": 1.0, "max_bet": 5000.0, "icon": "assets/icons/blackjack.svg", "dealer_style": "digital-ai" },
+    { "id": "cas-02", "name": "Cyber Roulette Royale", "type": "Table Game", "rtp": 97.3, "min_bet": 0.5, "max_bet": 2000.0, "icon": "assets/icons/roulette.svg", "dealer_style": "automated-wheel" },
+    { "id": "cas-03", "name": "Baccarat Premium", "type": "Table Game", "rtp": 98.9, "min_bet": 5.0, "max_bet": 10000.0, "icon": "assets/icons/baccarat.svg", "dealer_style": "classic" },
+    { "id": "cas-04", "name": "Texas Hold'em AI Poker", "type": "Poker", "rtp": 98.6, "min_bet": 2.0, "max_bet": 2500.0, "icon": "assets/icons/poker.svg", "dealer_style": "multiplayer" },
+    { "id": "cas-05", "name": "Gates of Bambika", "type": "Slot Machine", "rtp": 96.5, "min_bet": 0.2, "max_bet": 500.0, "icon": "assets/icons/slots-zeus.svg", "dealer_style": "reels-6x5" },
+    { "id": "cas-06", "name": "Neon Dice Dualities", "type": "Dice Game", "rtp": 99.0, "min_bet": 0.1, "max_bet": 1000.0, "icon": "assets/icons/dice.svg", "dealer_style": "rng-provable" },
+    { "id": "cas-07", "name": "Crypto Plinko Matrix", "type": "Arcade", "rtp": 98.0, "min_bet": 0.1, "max_bet": 750.0, "icon": "assets/icons/plinko.svg", "dealer_style": "physics-drop" },
+    { "id": "cas-08", "name": "Minesweeper Cashout", "type": "Mines", "rtp": 98.8, "min_bet": 0.5, "max_bet": 1500.0, "icon": "assets/icons/mine.svg", "dealer_style": "grid-5x5" },
+    { "id": "cas-09", "name": "Bambika Wheel of Fortune", "type": "Wheel Game", "rtp": 96.0, "min_bet": 0.5, "max_bet": 3000.0, "icon": "assets/icons/fortune-wheel.svg", "dealer_style": "vertical-wheel" },
+    { "id": "cas-10", "name": "Caribbean Stud Showdown", "type": "Poker", "rtp": 97.4, "min_bet": 1.0, "max_bet": 1200.0, "icon": "assets/icons/caribbean.svg", "dealer_style": "single-hand" },
+    { "id": "cas-11", "name": "Mega Fortune Slots", "type": "Slot Machine", "rtp": 95.8, "min_bet": 0.1, "max_bet": 300.0, "icon": "assets/icons/slots-gold.svg", "dealer_style": "reels-5x3" },
+    { "id": "cas-12", "name": "Sic Bo Dragon Drums", "type": "Dice Game", "rtp": 97.2, "min_bet": 0.5, "max_bet": 2000.0, "icon": "assets/icons/sicbo.svg", "dealer_style": "triple-dice" },
+    { "id": "cas-13", "name": "Hi-Lo Electric Stream", "type": "Card Game", "rtp": 98.0, "min_bet": 1.0, "max_bet": 4000.0, "icon": "assets/icons/hilo.svg", "dealer_style": "continuous-shoe" },
+    { "id": "cas-14", "name": "Diamond Keno Grid", "type": "Lottery", "rtp": 95.0, "min_bet": 0.2, "max_bet": 100.0, "icon": "assets/icons/keno.svg", "dealer_style": "ball-draw" },
+    { "id": "cas-15", "name": "Bambika Live Dealer VIP", "type": "Live Table", "rtp": 99.2, "min_bet": 25.0, "max_bet": 50000.0, "icon": "assets/icons/live-vip.svg", "dealer_style": "video-stream" }
+  ]
+    }
+
