@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BAMBIKA BETCRASH | Profile</title>
+
+  <!-- Global + Page CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/favicon.png">
+</head>
+
+<body>
+
+  <!-- TOP NAV -->
+  <header class="topbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo">
+      <span>BAMBIKA-BETCRASH</span>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="games.html">Games</a>
+      <a href="wallet.html">Wallet</a>
+      <a href="profile.html" class="active">Profile</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="profile-container">
+
+    <!-- USER CARD -->
+    <section class="user-card">
+      <div class="avatar">
+        <img src="assets/images/user.png" alt="User Avatar">
+      </div>
+
+      <div class="user-info">
+        <h2 id="username">Player One</h2>
+        <p class="email">player@email.com</p>
+
+        <div class="status">
+          <span class="badge online">Online</span>
+          <span class="badge vip">VIP Member</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-grid">
+
+      <div class="stat-box">
+        <h3>Balance</h3>
+        <p id="balance">KES 0.00</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Total Bets</h3>
+        <p id="totalBets">0</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Wins</h3>
+        <p id="wins">0</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Losses</h3>
+        <p id="losses">0</p>
+      </div>
+
+    </section>
+
+    <!-- QUICK ACTIONS -->
+    <section class="actions">
+
+      <button onclick="location.href='wallet.html'">
+        💰 Wallet
+      </button>
+
+      <button onclick="location.href='history.html'">
+        📊 History
+      </button>
+
+      <button onclick="location.href='settings.html'">
+        ⚙️ Settings
+      </button>
+
+      <button class="danger" onclick="logout()">
+        🚪 Logout
+      </button>
+
+    </section>
+
+  </main>
+
+  <!-- SCRIPT -->
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/storage.js"></script>
+
+  <script>
+    // Load user data
+    document.addEventListener("DOMContentLoaded", () => {
+      const user = JSON.parse(localStorage.getItem("user")) || {};
+
+      document.getElementById("username").textContent = user.name || "Guest Player";
+      document.querySelector(".email").textContent = user.email || "no-email@bambika.com";
+
+      document.getElementById("balance").textContent =
+        "KES " + (user.balance || 0).toFixed(2);
+
+      document.getElementById("totalBets").textContent = user.totalBets || 0;
+      document.getElementById("wins").textContent = user.wins || 0;
+      document.getElementById("losses").textContent = user.losses || 0;
+    });
+
+    // Logout
+    function logout() {
+      localStorage.removeItem("user");
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+  </html>
