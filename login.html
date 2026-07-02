@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAMBIKA-BETCRASH | Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+    <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Background -->
+    <div class="auth-bg"></div>
+
+    <!-- Login Container -->
+    <div class="auth-container">
+
+        <!-- Logo -->
+        <div class="auth-logo">
+            <img src="assets/logo.png" alt="BAMBIKA Logo">
+            <h1>BAMBIKA-BETCRASH</h1>
+            <p>Welcome Back</p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="auth-form">
+
+            <div class="input-group">
+                <label>Email or Phone</label>
+                <input
+                    type="text"
+                    id="email"
+                    placeholder="Enter email or phone"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    required>
+            </div>
+
+            <div class="remember-row">
+                <label>
+                    <input type="checkbox">
+                    Remember Me
+                </label>
+
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button class="btn-primary" type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <!-- Divider -->
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <!-- Register -->
+        <p class="auth-footer">
+            Don't have an account?
+            <a href="register.html">Register</a>
+        </p>
+
+        <!-- Back -->
+        <a href="index.html" class="back-home">
+            ← Back Home
+        </a>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
