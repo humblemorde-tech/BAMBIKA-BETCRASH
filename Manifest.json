@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifest Preview - BAMBIKA BETCRASH</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo">🎰 Manifest Debug Panel</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h2>📱 PWA Manifest Info</h2>
+
+        <pre id="manifestBox">Loading manifest...</pre>
+
+        <button class="btn" onclick="loadManifest()">Refresh Manifest</button>
+    </section>
+
+</main>
+
+<script>
+async function loadManifest() {
+    try {
+        const res = await fetch('manifest.json');
+        const data = await res.json();
+
+        document.getElementById('manifestBox').textContent =
+            JSON.stringify(data, null, 2);
+    } catch (err) {
+        document.getElementById('manifestBox').textContent =
+            "Failed to load manifest.json";
+    }
+}
+
+loadManifest();
+</script>
+
+</body>
+</html>
